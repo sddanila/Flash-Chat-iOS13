@@ -7,23 +7,29 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabel: CLTypingLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = ""
-        let titleText = "⚡️FlashChat"
-        var charIndex : Double = 0
-        for letter in titleText {
-            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
-                self.titleLabel.text?.append(letter)
-            }
-            charIndex += 1
-        }
+//        Animation without pods
+        
+//        titleLabel.text = ""
+//        let titleText = "⚡️FlashChat"
+//        var charIndex : Double = 0
+//        for letter in titleText {
+//            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
+//                self.titleLabel.text?.append(letter)
+//            }
+//            charIndex += 1
+//        }
+        
+//        Animation with pod
+        titleLabel.text = "⚡️FlashChat"
     }
     
 
