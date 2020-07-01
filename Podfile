@@ -7,5 +7,9 @@ target 'Flash Chat iOS13' do
     inherit! :search_paths
   
   pod 'CLTypingLabel', '~> 0.4.0'
-
+  
+  # Firebase products
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  
 end
