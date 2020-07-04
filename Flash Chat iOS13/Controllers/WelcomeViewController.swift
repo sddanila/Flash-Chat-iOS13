@@ -29,7 +29,7 @@ class WelcomeViewController: UIViewController {
 //        }
         
 //        Animation with pod
-        titleLabel.text = "⚡️FlashChat"
+        titleLabel.text = K.appName
     }
     
 
